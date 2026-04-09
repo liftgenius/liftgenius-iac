@@ -6,5 +6,10 @@ terraform {
       source  = "hashicorp/aws"
       version = ">= 6.32.0"
     }
+    
+    rabbitmq = {
+      source = "0username/rabbitmq"
+      version = "1.9.1"
+    }
   }
 }

@@ -32,3 +32,9 @@ provider "aws" {
     sts            = "http://localhost:4566"
   }
 }
+
+provider "rabbitmq" {
+  endpoint = "http://127.0.0.1:15672"
+  username = var.rabbitmq_username
+  password = var.rabbitmq_password
+}

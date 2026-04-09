@@ -6,4 +6,8 @@ module "s3_bucket_and_policy" {
   allowed_origins = toset([ "*" ])
 }
 
+resource "rabbitmq_vhost" "video_processing_jobs" {
+  name = "video_processing_jobs"
+}
+
 

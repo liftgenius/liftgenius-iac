@@ -14,6 +14,17 @@ variable "secret_key" {
     sensitive   = true
 }
 
+variable "rabbitmq_username" {
+    type        = string
+    default     = "guest"
+}
+
+variable "rabbitmq_password" {
+    type        = string
+    default     = "guest"
+    sensitive   = true
+}
+
 variable "s3_bucket_names" {
     type        = set(string)
     default     = [ "bucket1", "bucket2", "bucket3" ]
