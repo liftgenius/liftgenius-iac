@@ -1,0 +1,10 @@
+headscale_api_key = "hskey-api-XXX"
+headscale_fqdn = "example.com"
+magicdns_domain = "magicdns.net"
+localstack_host = "localstack.magicdns.net"
+rabbitmq_host = "rabbitmq.magicdns.net"
+rabbitmq_vhost_name = "/vhost"
+rabbitmq_application_username = "guest"
+rabbitmq_exchanges = [  "incoming_exchange", "outgoing_exchange" ]
+rabbitmq_queues = [ "incoming_queue", "outgoing_queue" ]
+s3_bucket_names = [ "uploads", "downloads" ]

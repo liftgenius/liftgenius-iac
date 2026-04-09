@@ -11,5 +11,10 @@ terraform {
       source = "0username/rabbitmq"
       version = "1.9.1"
     }
+
+    headscale = {
+      source = "awlsring/headscale"
+      version = "0.4.2"
+    }
   }
 }
