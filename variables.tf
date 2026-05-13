@@ -1,3 +1,8 @@
+variable "environment" {
+  type              = string
+  default           = "local"
+}
+
 variable "aws_region" {
     type            = string
     default         = "us-east-1"
@@ -36,12 +41,12 @@ variable "headscale_pre_auth_key" {
     sensitive       = true
 }
 
-variable "localstack_host" {
+variable "ministack_host" {
     type            = string
-    default         = "localstack"
+    default         = "andover-linuxbox.homelab.net"
 }
 
-variable "localstack_port" {
+variable "ministack_port" {
     type            = number
     default         = 4566
 }
@@ -102,4 +107,22 @@ variable "rabbitmq_exchanges" {
 variable "s3_bucket_names" {
     type            = set(string)
     default         = [ "bucket1", "bucket2", "bucket3" ]
+}
+
+# variable "vpc_cidr" {
+#   description = "CIDR block for VPC"
+#   type        = string
+#   default     = "10.0.0.0/16"
+# }
+
+variable "db_username" {
+  description = "Database administrator username"
+  type        = string
+  sensitive   = true
+}
+
+variable "db_password" {
+  description = "Database administrator password"
+  type        = string
+  sensitive   = true
 }

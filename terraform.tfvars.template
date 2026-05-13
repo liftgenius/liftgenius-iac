@@ -1,8 +1,8 @@
 headscale_api_key = "hskey-api-XXX"
 headscale_fqdn = "example.com"
 magicdns_domain = "magicdns.net"
-localstack_host = "localstack.magicdns.net"
-rabbitmq_host = "rabbitmq.magicdns.net"
+localstack_host = "localstack"
+rabbitmq_host = "rabbitmq"
 rabbitmq_vhost_name = "/vhost"
 rabbitmq_application_username = "guest"
 rabbitmq_exchanges = [  "incoming_exchange", "outgoing_exchange" ]

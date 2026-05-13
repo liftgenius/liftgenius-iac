@@ -7,9 +7,14 @@ terraform {
       version = ">= 6.32.0"
     }
     
+    # rabbitmq = {
+    #   source = "0username/rabbitmq"
+    #   version = "1.9.1"
+    # }
+
     rabbitmq = {
-      source = "0username/rabbitmq"
-      version = "1.9.1"
+      source = "cyrilgdn/rabbitmq"
+      version = "1.10.1"
     }
 
     headscale = {
